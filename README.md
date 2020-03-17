@@ -1,4 +1,4 @@
-Test case for https://github.com/cython/cython/issues/3439.
+Test case for https://github.com/cython/cython/issues/3442.
 
 ```sh
 $ find -name '*.c' -delete -o -name '*.html' -delete -o -name '*.so' -delete
