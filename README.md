@@ -15,9 +15,3 @@ Using `from . import modulename` in basic Python attempts to find `modulename.*`
 Using `from .packagename cimport modulename` in `__init__.pxd` doesn't work around this, because this (correctly) attempts to find `packagename` inside the package itself.
 
 Because of this, there should not be any functional code out there that depends on the relative `cimport` being based on the parent directory, meaning that it should be possible to switch it to the package directory, in line with Python behaviour, without breaking compatibility.
-
----
-
-Related: https://github.com/cython/cython/issues/3270
-
-The classes actually can be exposed at the package scope, I think.
